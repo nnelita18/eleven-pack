@@ -1,7 +1,9 @@
 $elevenp-card : '.eleven-card';
 
 #{$elevenp-card}{
+	border-radius: .8rem;
 	.form-title {
+		
 		font-family: "Brush Up Too W01 Regular";
 		font-weight: normal;
 		font-style:normal;
@@ -20,6 +22,7 @@ $elevenp-card : '.eleven-card';
 	}
 	&__form {
 		color: #000000;
+		
 		.pf-col {
 			&:nth-child(odd) {
 				padding-right: 2.5rem;

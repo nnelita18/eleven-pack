@@ -35,6 +35,7 @@ $text-orange: #d48a39;
 		}
 	}
 	&__form {
+		padding-bottom: 3rem;
 		.form-title {
 			font-family: "Brush Up Too W01 Regular";
 			font-weight: normal;
@@ -48,6 +49,46 @@ $text-orange: #d48a39;
 			-o-transform: rotate(-2deg);
 			-ms-transform: rotate(-2deg);
 			transform: rotate(-2deg);
+		}
+	}
+	&__banner {
+		padding-top: 1.438rem;
+		padding-bottom: 4.875rem;
+		.food-l {
+			.fd {
+				position: absolute;
+				left: 0;
+    			top: -61px;
+			}
+		}
+		.food-r {
+			padding-top: 1.438rem;
+			text-align: right;
+			.fd {
+				position: absolute;
+				right: 0;
+				top: -61px;
+			}
+		}
+		.phrase {
+			font-family: "Brush Up Too W01 Regular";
+			font-weight: normal;
+			font-style:normal;
+			font-size: 3.563rem;
+			color: $bg-theme;
+			text-align: center;
+			letter-spacing: 12px;
+			-webkit-transform: rotate(-2deg);
+			-moz-transform: rotate(-2deg);
+			-o-transform: rotate(-2deg);
+			-ms-transform: rotate(-2deg);
+			transform: rotate(-2deg);
+			.text-orange {
+				color: #d48a39;
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			padding-bottom: 2rem;
 		}
 	}
 }

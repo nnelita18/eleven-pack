@@ -14,6 +14,7 @@ $container-max-widths: (
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "general/variables";
 @import "general/gral";
 @import "fonts/fonts";
 @import "elevenpack/header";

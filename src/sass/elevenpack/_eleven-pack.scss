@@ -1,0 +1,53 @@
+$elevenpack: '.eleven-pack';
+$text-orange: #d48a39;
+
+#{$elevenpack}{
+	&__celebrate {
+		.celebrate {
+			padding: 2.5rem 2.5rem 2.188rem;
+			&:nth-child(1) {
+				padding-left: 5rem;
+			}
+			&:nth-child(2) {
+				padding-right: 5rem;
+			}
+		}
+	}
+	&__promo {
+		background-color: $bg-theme;
+		color: #ebeadd;
+		text-align: center;
+		padding: 2.5rem 0 0.625rem;
+		.orange-text {
+			color: $text-orange;
+		}
+		.title {
+			font-size: 2.5rem;
+
+		}
+		.smaller {
+			color: $text-orange;
+			font-size: 0.72rem;
+			margin-bottom: 1.438rem;
+		}
+		p {
+			font-size: 1.3rem;
+		}
+	}
+	&__form {
+		.form-title {
+			font-family: "Brush Up Too W01 Regular";
+			font-weight: normal;
+			font-style:normal;
+			font-size: 3.125rem;
+			color: $bg-theme;
+			text-align: center;
+			padding: 1rem 0 1.375rem;
+			-webkit-transform: rotate(-2deg);
+			-moz-transform: rotate(-2deg);
+			-o-transform: rotate(-2deg);
+			-ms-transform: rotate(-2deg);
+			transform: rotate(-2deg);
+		}
+	}
+}

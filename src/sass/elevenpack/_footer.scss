@@ -1,0 +1,32 @@
+$footer: '.footer';
+
+#{$footer}{
+	background-color: #11140f;
+	color: #ffffff;
+	padding-top: 4.313rem;
+	padding-bottom: 10rem;
+	p, a {
+		font-family: "Hurme Geometric Sans 1 W03 Bold";
+		font-weight: normal;
+		font-style: normal;
+		font-size: 2.188rem;
+		color: #ffffff;
+		@include media-breakpoint-down(lg) {
+			font-size: 1.8rem;
+		}
+		@include media-breakpoint-down(md) {
+			font-size: 1.1rem;
+		}
+	}
+	p {
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	@include media-breakpoint-down(md) {
+		padding-top: 3.625rem;
+		padding-bottom: 2.375rem;
+	}
+}

@@ -1,0 +1,26 @@
+$ribbon: '.ribbon';
+$bg-theme: #648259;
+$bg-page: #ebeadd;
+
+.header {
+	background-color: #11140f;
+}
+#{$ribbon}{
+	background-color: $bg-theme;
+	border-top: 1rem solid  $bg-page;
+	font-family:"Hurme Geometric Sans 1 W03 Bold";
+	font-weight: normal;
+	font-style:normal;
+	// font-size: 1.063rem;
+	font-size: 1.3rem;
+	letter-spacing: .2em;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	color: #ffffff;
+	.colt-black {
+		color: #11140f;
+	}
+	@include media-breakpoint-down(md) {
+		font-size: 1rem;
+	}
+}

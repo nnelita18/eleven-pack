@@ -1,0 +1,199 @@
+body {
+	font-family:"Hurme Geometric Sans 1 W03 Bold";
+	font-weight: normal;
+	font-style:normal;
+	background: {
+		color: #013018;
+	}
+}
+
+.sl-left {
+	-webkit-animation: sl-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: sl-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/**
+ * ----------------------------------------
+ * animation sl-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes sl-left {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(-1000px);
+            transform: translateZ(-1400px) translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+            transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes sl-left {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(-1000px);
+            transform: translateZ(-1400px) translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+            transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+.sl-right {
+	-webkit-animation: sl-right 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: sl-right 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation sl-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes sl-right {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(1000px);
+            transform: translateZ(-1400px) translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+            transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes sl-right {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateX(1000px);
+            transform: translateZ(-1400px) translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateX(0);
+            transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+.fa-top {
+	-webkit-animation: fa-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fa-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation fa-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes fa-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fa-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.text-expand {
+	-webkit-animation: text-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: text-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation text-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes text-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+.appears-top {
+  -webkit-animation: appears-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: appears-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation appears-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes appears-top {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+@keyframes appears-top {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}

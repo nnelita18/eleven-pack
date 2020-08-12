@@ -1,0 +1,40 @@
+$theme-colors: (
+    "primary": #648259,
+    "dark": #10120e
+);
+
+$container-max-widths: (
+  xs: 0,
+  sm: 580px,
+  md: 768px,
+  lg: 990px,
+  xl: 1200px
+) !default;
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "general/gral";
+@import "fonts/fonts";
+@import "elevenpack/header";
+@import "elevenpack/lucky-page";
+@import "elevenpack/eleven-pack";
+@import "elevenpack/form-card/card";
+@import "elevenpack/hot-sale";
+
+
+@import "elevenpack/modal";
+
+@import "elevenpack/footer";
+
+
+@media (max-width: 767.98px)  {
+	.container {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 100%;
+	}
+}

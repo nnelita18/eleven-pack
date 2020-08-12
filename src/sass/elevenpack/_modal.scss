@@ -1,0 +1,237 @@
+$modal: '.lucky-modal';
+
+#{$modal}{
+	
+	.modal-content {
+		background: {
+			color: #11140f;
+			// image: url('../img/lucky/pat-green.jpg');
+			// size: cover;
+			// repeat: repeat-x;
+		}
+		padding: 1rem;
+		.modal-header {
+			border: 5px solid #1ea117;
+			border-bottom: 0;
+			justify-content: center;
+			text-transform: uppercase;
+			color: #ffffff;
+			.modal-title {
+			    font-family: "Brush Up Too W01 Regular";
+				font-weight: normal;
+				font-style: normal;
+				font-size: 2.25rem;
+				-webkit-font-smoothing: antialiased;
+				color: #d38804;
+				-webkit-transform: rotate(-1deg);
+				-moz-transform: rotate(-1deg);
+				-o-transform: rotate(-1deg);
+				-ms-transform: rotate(-1deg);
+				transform: rotate(-1deg);
+				padding-bottom: 0;
+			}
+		}
+		.modal-body {
+			border: 5px solid #1ea117;
+			border-top: 0;
+			border-bottom: 0;
+		}
+		.modal-footer {
+			border: 5px solid #1ea117;
+			border-top: 0;
+			.btn {
+				border-radius: 12px;
+			}
+			.btn-success {
+				background-color: #d38804;				
+				color: #11140f;
+				&:focus {
+					box-shadow: none;
+				}
+			}
+			.btn-danger {
+				background-color: #c11e22;
+			}
+		}
+
+		table {
+			color: #ffffff;
+			font-size: 18px;
+			thead {
+				background-color: #1ea117;
+				tr {
+					th {
+						padding: .5rem;
+						text-transform: uppercase;
+					}
+				}
+			}
+			tbody {
+				tr {
+					border-bottom: 3px solid #1ea117;
+				}
+			}
+			@include media-breakpoint-down(sm) {
+				font-size: 16px;
+			}
+		}
+
+		// payment method
+		.confirm-pay {
+			&__tipo {
+				display: flex;
+				align-items: stretch;
+				justify-content: center;
+				.payment-item {
+					margin: 1rem;
+					background-color: transparent;
+					color: #ffffff;
+					border: 5px solid #ffc107;
+					border-radius: 15px;
+					padding: 1rem 2rem;
+					text-align: center;
+					span {
+						display: block;
+						text-align: center;
+						padding: .5rem 0;
+						border-top: 5px dashed #ffc107;
+						margin: 1.5rem auto 0;
+						font-size: 19px;
+					}
+					
+				}
+				@include media-breakpoint-down(sm) {
+					flex-direction: column;
+				}
+			}
+		}
+
+	}
+
+	#tbodyFinal {
+		tr {
+			th {
+				&:first-child {
+					img {
+						margin: .6rem .8rem;
+					}
+				}
+			}
+		}
+	}
+
+	&--form {
+		.modal-content {
+			// background: #2c4e2f;
+			.modal-header {
+				.modal-title {
+				    font-family: "Brush Up Too W01 Regular";
+					font-weight: normal;
+					font-style: normal;
+					font-size: 2.25rem;
+					-webkit-font-smoothing: antialiased;
+					color: #d38804;
+					-webkit-transform: rotate(-4deg);
+					-moz-transform: rotate(-4deg);
+					-o-transform: rotate(-4deg);
+					-ms-transform: rotate(-4deg);
+					transform: rotate(-4deg);
+					padding-bottom: 0;
+				}
+				.close {
+					span {
+						color: #ffffff;
+						font-size: 3rem;
+					}
+				}
+			}
+			.modal-body {
+				border: 5px solid #1ea117;
+				border-top: 0;
+				border-bottom: 0;
+				.md-form {
+					color: #d38804;
+				}
+				.form-group {
+					color: #ffffff;
+
+				}
+				select {
+					option {
+						background-color: #11140f;
+						color: #ffffff;
+					}
+				}
+				.form-control {
+					background: transparent;
+					border: 3px solid #1ea117;
+					color: #ffffff;
+
+				}
+			}
+			.modal-footer {
+				border: 5px solid #1ea117;
+				border-top: 0;
+			}
+		}
+		
+	}
+	.legal-terms {
+		color: #ffffff;
+		.modal-header {
+			padding-top: 0;
+			padding-bottom: 0;
+			.close {
+				span {
+					color: #ffffff;
+					font-size: 3rem;
+					line-height: 1;
+				}
+			}
+		}
+		.modal-body {
+			border-bottom: 5px solid #1ea117;
+		}
+		.page-header {
+			padding: 0 3rem;
+			.logo {
+				display: block;
+				margin: 0 auto 1rem;
+			}
+			h1,
+			h2 {
+				text-align: center;
+				
+			}
+			h2 {
+				margin-bottom: 2rem;
+			}
+			p {
+				font-family: sans-serif;
+				font-size: 18px;
+				line-height: 1.9;
+			}
+			ul,
+			ol {
+				li {
+    				margin-bottom: .8rem;
+    				// font-family: sans-serif;
+					font-size: 18px;
+					line-height: 1.9;
+				}
+			}
+			&:after {
+				content: "";
+				display: block;
+				position: relative;
+				height: 3px;
+				width: 113px;
+				background-color: #467b0b;
+				margin: 2rem auto;
+			}
+			@include media-breakpoint-down(md) {
+				padding: 0 1rem;
+			}
+		}
+	}
+}

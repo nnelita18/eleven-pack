@@ -8,10 +8,14 @@ $bg-input: #212922;
 	text-align: center;
 	color: #ffffff;
 	padding: 3.75rem 0 5rem;
+	position: relative;
 
 	&__title {
 		font-size: 3.2rem;
 		color: #ebeadd;
+		@include media-breakpoint-down(sm) {
+			font-size: 2.2rem;
+		}
 	}
 	.label-title {
 		background-color: #7a3322;
@@ -21,6 +25,14 @@ $bg-input: #212922;
 		letter-spacing: 12px;
 		margin: 1.25rem auto;
 		width: 32.375rem;
+		@include media-breakpoint-down(sm) {
+			font-size: 2rem;
+		    letter-spacing: 6px;
+		    width: auto;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		padding: 1.75rem 0 2rem;
 	}
 }
 
@@ -71,7 +83,7 @@ $cta : '.cta';
 				@include media-breakpoint-down(md) {
 					width: 108px;
 				}
-				@media (max-width: 420px) {
+				@media (max-width: 629px) {
 					border-right: 5px solid $borderinput-color;
 				}
 			}

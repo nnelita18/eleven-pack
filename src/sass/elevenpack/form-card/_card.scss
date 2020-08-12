@@ -16,9 +16,13 @@ $elevenp-card : '.eleven-card';
 		-o-transform: rotate(-2deg);
 		-ms-transform: rotate(-2deg);
 		transform: rotate(-2deg);
+
 	}
 	.card-body {
 		padding: 2.813rem;
+		@include media-breakpoint-down(sm) {
+			padding: 1rem;
+		}
 	}
 	&__form {
 		color: #000000;
@@ -29,6 +33,9 @@ $elevenp-card : '.eleven-card';
 			}
 			&:nth-child(even) {
 				padding-left: 2.5rem;
+			}
+			@include media-breakpoint-down(sm) {
+				padding: .1rem .9rem !important;
 			}
 		}
 		.form-control {

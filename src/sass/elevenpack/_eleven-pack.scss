@@ -2,7 +2,13 @@ $elevenpack: '.eleven-pack';
 $text-orange: #d48a39;
 
 #{$elevenpack}{
+	background-color: #19261e;
+	.container {
+		background-color: $bg-page;
+	}
 	&__celebrate {
+		justify-content: center;
+		position: relative;
 		.celebrate {
 			padding: 2.5rem 2.5rem 2.188rem;
 			&:nth-child(1) {
@@ -11,6 +17,18 @@ $text-orange: #d48a39;
 			&:nth-child(2) {
 				padding-right: 5rem;
 			}
+			@include media-breakpoint-down(sm) {
+				padding: 1rem !important;
+				width: 16rem;
+				display: flex;
+			}
+			.yelclover {
+				top: 12rem;
+				right: 3rem;
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			justify-content: center;
 		}
 	}
 	&__promo {
@@ -23,6 +41,9 @@ $text-orange: #d48a39;
 		}
 		.title {
 			font-size: 2.5rem;
+			@include media-breakpoint-down(sm) {
+				font-size: 1.5rem;
+			}
 
 		}
 		.smaller {
@@ -32,6 +53,10 @@ $text-orange: #d48a39;
 		}
 		p {
 			font-size: 1.3rem;
+			line-height: 1.2;
+			@include media-breakpoint-down(sm) {
+				font-size: 0.86rem;
+			}
 		}
 	}
 	&__form {
@@ -44,16 +69,30 @@ $text-orange: #d48a39;
 			color: $bg-theme;
 			text-align: center;
 			padding: 1rem 0 1.375rem;
+			letter-spacing: 5px;
 			-webkit-transform: rotate(-2deg);
 			-moz-transform: rotate(-2deg);
 			-o-transform: rotate(-2deg);
 			-ms-transform: rotate(-2deg);
 			transform: rotate(-2deg);
+			@include media-breakpoint-down(md) {
+				font-size: 2.125rem;
+			}
 		}
 	}
 	&__banner {
-		padding-top: 1.438rem;
-		padding-bottom: 4.875rem;
+		// padding-top: 1.438rem;
+		// padding-bottom: 4.875rem;
+		.food {
+			padding: 0;
+			.imgfood {
+				margin-top: -3rem;
+			}
+
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+		}
 		.food-l {
 			.fd {
 				position: absolute;
@@ -86,9 +125,150 @@ $text-orange: #d48a39;
 			.text-orange {
 				color: #d48a39;
 			}
+			@include media-breakpoint-down(sm) {
+				font-size: 2.5rem;
+				color: #648259;
+				text-align: center;
+				letter-spacing: 5px;
+			}
+		}
+		.terms {
+			color: $bg-theme;
+			font-size: 2.188rem;
+			padding: 7.5rem 0 1rem;
+			text-align: center;
+			@include media-breakpoint-down(sm) {
+				font-size: 1.4rem;
+				padding: 2.5rem 0 0rem;
+				text-align: center;
+			}
+
 		}
 		@include media-breakpoint-down(sm) {
 			padding-bottom: 2rem;
 		}
+	}
+}
+
+.yelclover {
+	position: absolute;
+	top: 6rem;
+	// right: 14rem;
+	right: 21rem;
+	// width: 52px;
+	// height: 52px;
+	width: 86px;
+	height: 86px;
+	z-index: 2;
+	transform-origin: top left;
+	transform: scale(0) rotate(0deg) translate(-10%, -10%);
+	animation: greenclovr 12s ease-in forwards infinite;
+
+	&--2 {
+        animation-delay: 2s;
+		width: 125px;
+		height: 125px;
+		left: 10rem;
+		top: 11rem;
+		@include media-breakpoint-down(lg) {
+			// width: 90px;
+			// height: 90px;
+		}
+		@include media-breakpoint-down(sm) {
+			// width: 50px;
+			// height: 50px;
+			// left: 3rem;
+			// top: 33rem;
+		}
+    }
+
+    &--3 {
+        animation-delay: 4s;
+        width: 54px;
+		height: 54px;
+		top: 10.5rem;
+		right: 10rem;
+		@include media-breakpoint-down(sm) {
+			// width: 30px;
+			// height: 30px;
+			// top: 46rem;
+			// right: 6rem;
+		}
+    }
+
+    @keyframes greenclovr {
+		from {
+			transform: scale(0) rotate(0deg) translate(-50%, -50%);
+			opacity: 1;
+		}
+		to {
+			transform: scale(2) rotate(960deg) translate(-50%, -50%);
+			opacity: 0;
+		}
+	}
+	@include media-breakpoint-down(lg) {
+		right: 13rem;
+	}
+	@include media-breakpoint-down(md) {
+		width: 40px;
+		height: 40px;
+		right: 9rem;
+	}
+	@include media-breakpoint-down(sm) {
+		width: 40px;
+		height: 40px;
+		right: 2rem;
+	}
+}
+
+$brand: '.brand';
+#{$brand}{
+	position: relative;
+	justify-content: space-between;
+	
+	&__lpass {
+		padding-top: 6.25rem;
+
+		.imgic {
+			margin: 0 auto;
+			z-index: 1;
+		}
+		.brandimg {
+			margin-bottom: 1rem;
+		}
+		.info-brand {
+			font-family: "Hurme Geometric Sans 1 W03 Bold";
+			font-weight: normal;
+			font-style:normal;
+			font-size: 1.438rem;
+			color: #ffffff;
+			text-align: center;
+			line-height: 1;
+			-webkit-transform: rotate(-4deg);
+			-moz-transform: rotate(-4deg);
+			-o-transform: rotate(-4deg);
+			-ms-transform: rotate(-4deg);
+			transform: rotate(-4deg);
+			p {
+				.lhide {
+					@include media-breakpoint-down(lg) {
+						display: none;
+					}
+				}
+			}
+			@include media-breakpoint-down(lg) {
+				font-size: 1.1rem;
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			padding-top: 1.25rem;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		padding-bottom: 2rem;
+		justify-content: center;
+	}
+	@include media-breakpoint-down(xs) {
+		padding-bottom: 1.875rem;
 	}
 }

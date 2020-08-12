@@ -1,17 +1,18 @@
 $modal: '.lucky-modal';
+$bordercol: #d99259;
 
 #{$modal}{
 	
 	.modal-content {
 		background: {
-			color: #11140f;
+			color: $bg-theme;
 			// image: url('../img/lucky/pat-green.jpg');
 			// size: cover;
 			// repeat: repeat-x;
 		}
 		padding: 1rem;
 		.modal-header {
-			border: 5px solid #1ea117;
+			border: 5px solid $bordercol;
 			border-bottom: 0;
 			justify-content: center;
 			text-transform: uppercase;
@@ -32,12 +33,41 @@ $modal: '.lucky-modal';
 			}
 		}
 		.modal-body {
-			border: 5px solid #1ea117;
+			border: 5px solid $bordercol;
 			border-top: 0;
 			border-bottom: 0;
+			a {
+				color: #ffffff;
+			}
+			.lis-branchs {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				.title {
+					background-color: $bg-gold;
+				    padding: .5rem 1rem;
+				    display: block;
+				}
+				& > li {
+					width: 30%;
+					margin-top: 1rem;
+					margin-left: .5rem;
+					@include media-breakpoint-down(md) {
+						width: 100%;
+					}
+				}
+				ul {
+					margin-top: .6rem;
+					& > li {
+						font-family: Arial, sans-serif;
+						font-size: 1rem;
+						line-height: 1.2;
+					}
+				}
+			}
 		}
 		.modal-footer {
-			border: 5px solid #1ea117;
+			border: 5px solid $bordercol;
 			border-top: 0;
 			.btn {
 				border-radius: 12px;
@@ -58,7 +88,7 @@ $modal: '.lucky-modal';
 			color: #ffffff;
 			font-size: 18px;
 			thead {
-				background-color: #1ea117;
+				background-color: $bordercol;
 				tr {
 					th {
 						padding: .5rem;
@@ -68,7 +98,7 @@ $modal: '.lucky-modal';
 			}
 			tbody {
 				tr {
-					border-bottom: 3px solid #1ea117;
+					border-bottom: 3px solid $bordercol;
 				}
 			}
 			@include media-breakpoint-down(sm) {
@@ -146,7 +176,7 @@ $modal: '.lucky-modal';
 				}
 			}
 			.modal-body {
-				border: 5px solid #1ea117;
+				border: 5px solid $bordercol;
 				border-top: 0;
 				border-bottom: 0;
 				.md-form {
@@ -164,13 +194,13 @@ $modal: '.lucky-modal';
 				}
 				.form-control {
 					background: transparent;
-					border: 3px solid #1ea117;
+					border: 3px solid $bordercol;
 					color: #ffffff;
 
 				}
 			}
 			.modal-footer {
-				border: 5px solid #1ea117;
+				border: 5px solid $bordercol;
 				border-top: 0;
 			}
 		}
@@ -190,7 +220,7 @@ $modal: '.lucky-modal';
 			}
 		}
 		.modal-body {
-			border-bottom: 5px solid #1ea117;
+			border-bottom: 5px solid $bordercol;
 		}
 		.page-header {
 			padding: 0 3rem;
@@ -226,7 +256,7 @@ $modal: '.lucky-modal';
 				position: relative;
 				height: 3px;
 				width: 113px;
-				background-color: #467b0b;
+				background-color: #d99259;
 				margin: 2rem auto;
 			}
 			@include media-breakpoint-down(md) {

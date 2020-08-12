@@ -1,14 +1,21 @@
 <partial src="header.html"></partial>
 <main class="lucky-pass eleven-pack">
     <div class="container" >
+        <!-- PROMO IMAGES -->
         <div class="row eleven-pack__celebrate">
-            <div class="col-md-6 celebrate">
-                <img src="assets/img/eleven-pack/mcday.png" alt="McCarthys's Day" class="img-fluid">
+            <div class="col-md-6 col-xs-6 celebrate">
+                <img src="assets/img/eleven-pack/mcday.png" alt="McCarthys's Day" class="img-fluid sl-left">
             </div>
-            <div class="col-md-6 celebrate">
-                <img src="assets/img/eleven-pack/packmcday.png" alt="11 Pack" class="img-fluid">
+            <div class="col-md-6 col-xs-6 celebrate">
+
+                <img src="assets/img/eleven-pack/purple-clover.png" alt="" class="yelclover">
+
+                <img src="assets/img/eleven-pack/packmcday.png" alt="11 Pack" class="img-fluid sl-right">
+
             </div>
         </div>
+        <!--/ PROMO IMAGES -->
+
         <div class="row eleven-pack__promo">
             <div class="col-12">
                 <h4 class="title">COMBINA <span class="orange-text">11</span> DE NUESTROS DELICIOSOS <br>
@@ -26,8 +33,10 @@
                 </p>
             </div>
         </div>
+
+        <!-- REGISTRATION FORM -->
         <div class="row eleven-pack__form justify-content-center">
-            <div class="col-10 grid-margin">
+            <div class="col-md-10 col-12 grid-margin">
                 <h4 class="form-title">
                     registrate y obtén tu cupón
                 </h4>
@@ -58,7 +67,7 @@
 
 
                             <div class="row justify-content-center">
-                                <div class="col-5">
+                                <div class="col-12 col-md-8 col-lg-6">
                                     <button type="submit" class="btn btn-theme d-block w-100">Registrarme</button>
                                 </div>
                             </div>
@@ -67,8 +76,12 @@
                 </div>
             </div>
         </div>
+        <!-- /REGISTRATION FORM -->
 
+        <!-- CTA HOT-SALE -->
         <div class="row hot-sale justify-content-center">
+            <img src="assets/img/eleven-pack/orange-clover.png" alt="" class="yelclover yelclover--2">
+            <img src="assets/img/eleven-pack/gray-clover.png" alt="" class="yelclover yelclover--3">
             <div class="col-12">
                 <h5 class="hot-sale__title">11 SNACKS Y CERVEZA O REFRESCO X $89</h5>
             </div>
@@ -80,44 +93,53 @@
                 <form class="form-inline cta">
                     <div class="form-group cta__el mb-2">
                         <label for="numcps">CUPONES</label>
-                        <input type="number" class="form-control" value="10" id="numcps" min="1"
+                        <input type="number" class="form-control" value="1" id="numcps" min="1"
                         max="20">
                     </div>
                     <div class="form-group cta__el mb-2">
                         <label for="totalcps">TOTAL A PAGAR</label>
-                        <input type="text" class="form-control" value="$1,000" id="totalcps">
+                        <input type="text" class="form-control" value="$89" id="totalcps">
                     </div>
                     <button type="submit" class="btn cta__btn">COMPRAR</button>
                 </form>
 
             </div>
         </div>
+        <!--/ CTA HOT-SALE -->
 
+        <!-- FOOD SECTION -->
         <div class="row eleven-pack__banner brand">
-            <img src="assets/img/lucky/yel-clover.png" alt="" class="yelclover">
-            <img src="assets/img/lucky/yel-clover.png" alt="" class="yelclover">
-            <img src="assets/img/lucky/yel-clover.png" alt="" class="yelclover">
 
-            <div class="col-lg-2 col-md-2 food  food-l">
+            <div class="col-lg-3 col-md-3 food  food-l">
                 <!-- <div class="food__item fd fd--1"></div> -->
-                <img src="assets/img/eleven-pack/onion-left.png" alt="" class="fd fd--1 sl-left">
+                <img src="assets/img/eleven-pack/onion-left.png" alt="" class="img-fluid imgfood sl-left ">
             </div>
-            <div class="col-lg-8 col-md-8 brand__lpass">
+            <div class="col-6 col-lg-4 col-md-4 brand__lpass">
 
                 <img src="assets/img/eleven-pack/mc-logo.png" class="img-fluid d-block imgic fa-top">
+                
 
+            </div>
+            <div class="col-lg-3 col-md-3 food food-r">
+
+                <img src="assets/img/eleven-pack/onion-right.png" alt="" class="img-fluid imgfood sl-right">
+            </div>
+        </div>
+        <div class="row eleven-pack__banner justify-content-between">
+            <div class="col-12">
                 <div class="phrase">
                     obtén tu cupón Y  <br>
                     <span class="text-orange">CELEBRA EN GRANDE</span> <br>
                     EL MCcarthy's day
                 </div>
-
             </div>
-            <div class="col-lg-2 col-md-2 food food-r">
-
-                <img src="assets/img/eleven-pack/onion-right.png" alt="" class="fd fd--2 sl-right">
+            <div class="col-12">
+                <div class="terms">
+                    <a href="" class="terms" data-toggle="modal" data-target="#sucursales-modal">SUCURSALES PARTICIPANES</a> - <a href="" class="terms" data-toggle="modal" data-target="#terminos-modal">TÉRMINOS Y CONDICIONES</a>
+                </div>
             </div>
         </div>
+        <!-- /FOOD SECTION -->
 
     </div>
 

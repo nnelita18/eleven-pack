@@ -17,15 +17,22 @@ $text-orange: #d48a39;
 			&:nth-child(2) {
 				padding-right: 5rem;
 			}
-			@include media-breakpoint-down(sm) {
-				padding: 1rem !important;
-				width: 16rem;
-				display: flex;
-			}
 			.yelclover {
 				top: 12rem;
 				right: 3rem;
 			}
+			.cel-img {
+				@include media-breakpoint-down(sm) {
+					// height: 15.5rem;
+					// max-width: 16rem;
+					// margin: 0 auto;
+				}
+			}
+			@include media-breakpoint-down(sm) {
+				padding: 2rem 4rem !important;
+				display: flex;
+			}
+
 		}
 		@include media-breakpoint-down(sm) {
 			justify-content: center;
